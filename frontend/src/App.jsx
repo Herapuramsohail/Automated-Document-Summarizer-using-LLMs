@@ -9,9 +9,9 @@ import MetricsAnalytics from './components/MetricsAnalytics';
 import { FileText, UploadCloud } from 'lucide-react';
 import axios from 'axios';
 
-// During local dev, Vite proxies /api requests to http://localhost:8000 or http://backend:8000.
-// In docker/production, we serve backend and frontend on standard host configurations.
-const backendUrl = ""; 
+// In local dev, Vite proxies /api to localhost:8000. In production (Vercel), 
+// VITE_API_URL points to the Render backend (e.g. https://your-app.onrender.com).
+const backendUrl = import.meta.env.VITE_API_URL || "";
 
 export default function App() {
   const [documents, setDocuments] = useState([]);
