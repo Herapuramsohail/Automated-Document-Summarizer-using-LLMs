@@ -1,0 +1,74 @@
+# =============================
+# Python
+# =============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# =============================
+# Environment / Secrets
+# =============================
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# =============================
+# Database
+# =============================
+*.db
+*.sqlite
+*.sqlite3
+backend/db/
+
+# =============================
+# Uploads & Vector Indices (runtime data)
+# =============================
+uploads/
+backend/uploads/
+vector_indices/
+backend/vector_indices/
+
+# =============================
+# Node / Frontend
+# =============================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================
+# OS / IDE
+# =============================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =============================
+# Testing
+# =============================
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+test_*.py
